@@ -16,7 +16,7 @@ I will use the technologies listed above to render a CRUD app in the browser.
 <a href="https://trello.com/b/3YUf6ckR/wdi-sm-43-project-2" target = "_blank">GA Missed Connections Trello</a>
 
 ###Entity Relationship Diagram (ERD):
-![erd](assets/erd.jpg)
+![erd](assets/ERD.jpg)
 
 ###Wireframes:
 Log In:
