@@ -20,9 +20,9 @@ Rails.application.routes.draw do
       post 'users' => 'users#create'
 
 
-      root to: 'users#new'
+
     # get 'users/new' => 'users#new', as: :new_user
-    post 'users' => 'users#create'
+  
     # ----- add these lines here: -----
     # log in page with form:
     get '/login'     => 'sessions#new'

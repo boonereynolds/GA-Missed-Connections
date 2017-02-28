@@ -2,7 +2,7 @@
 
 <h1>Sign Up</h1>
 
-<%= form_for @user do |f| %>
+<%= form_for(@user, url: new_user_path) do |f| %>
   <div>
     <%= f.label :username %>
     <%= f.text_field :username, autofocus: true %>
@@ -24,5 +24,8 @@
     <%= f.submit "Sign up!" %>
   </div>
 <% end %>
+<% %>
+
+
 
 <%# ----- end of added lines ----- %>
