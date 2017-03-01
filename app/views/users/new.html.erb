@@ -2,7 +2,7 @@
 
 <h1>Sign Up</h1>
 
-<%= form_for(@user, url: new_user_path) do |f| %>
+<%= form_for(@user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
   <div>
     <%= f.label :username %>
     <%= f.text_field :username, autofocus: true %>

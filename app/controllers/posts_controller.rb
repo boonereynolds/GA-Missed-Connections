@@ -26,6 +26,8 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find(params[:id])
+    #dont allow different user to edit post that is not theirs
+    redirect_to @post if @post.user != current_user
   end
 
   def update
