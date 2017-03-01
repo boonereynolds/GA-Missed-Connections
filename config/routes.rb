@@ -2,13 +2,17 @@ Rails.application.routes.draw do
 
   get 'pages/secret'
 
-  get 'posts/' => 'posts#index'
-  get 'posts/new' => 'posts#new', as: :new_post
-  get 'posts/:id' => 'posts#show', as: :post
-  post 'posts/' => 'posts#create'
-  get 'posts/:id/edit' => 'posts#edit', as: :edit_post
-  patch 'posts/:id' => 'posts#update'
-  delete 'posts/:id' => 'posts#destroy'
+  # get 'posts/' => 'posts#index'
+  # get 'posts/new' => 'posts#new', as: :new_post
+  # get 'posts/:id' => 'posts#show', as: :post
+  # post 'posts/' => 'posts#create'
+  # get 'posts/:id/edit' => 'posts#edit', as: :edit_post
+  # patch 'posts/:id' => 'posts#update'
+  # delete 'posts/:id' => 'posts#destroy'
+
+  resources :posts do
+      resources :comments, except: [:index, :show]
+  end
 
   # ----- add these lines here: -----
       # Add a root route if you don't have one...
@@ -20,9 +24,6 @@ Rails.application.routes.draw do
       post 'users' => 'users#create'
 
 
-
-    # get 'users/new' => 'users#new', as: :new_user
-  
     # ----- add these lines here: -----
     # log in page with form:
     get '/login'     => 'sessions#new'
