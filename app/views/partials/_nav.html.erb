@@ -15,14 +15,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
-        <li><a href="/posts/new">Post</a></li>
-        <li><a href="#">About</a></li>
+        <!-- needs home route -->
+        <li><a href="/posts">Home</a></li>
       <% if current_user %>
       <!-- link to proflie page -->
+      <li><a href="/posts/new">Post</a></li>
+      <li><a href="#">About</a></li>
         <li><%= link_to 'Log Out', logout_path, method: :delete %></li>
         <% else %>
           <!-- not logged in -->
+          <li><a href="#">About</a></li>
           <li><%= link_to 'Log In', login_path %></li>
           <li><%= link_to 'Sign Up', new_user_path %></li>
         <% end %>

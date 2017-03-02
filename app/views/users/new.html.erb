@@ -1,5 +1,6 @@
 <%# ----- add these lines here: ----- %>
-
+<div class = "container">
+  <div class = "jumbotron">
 <h1>Sign Up</h1>
 
 <%= form_for(@user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
@@ -24,7 +25,8 @@
     <%= f.submit "Sign up!" %>
   </div>
 <% end %>
-<% %>
+</div>
+</div>
 
 
 
