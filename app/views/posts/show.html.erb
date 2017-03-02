@@ -1,6 +1,8 @@
-<h1> <%= @post.title%> </h1>
+<div class = "container">
+  <h1> <%= @post.title%> </h1>
 <p>
-  <%= @post.body %>
+  <%= @post.body %><br>
+  <h6><%= @post.location.campus %></h6>
 </p>
 <% if @post.user == current_user %>
 <%= link_to "Edit this post!", edit_post_path(@post) %>
@@ -25,3 +27,4 @@ New Comment:
 
 <%= link_to "Back to the list!", posts_path %>
 </body>
+</div>
