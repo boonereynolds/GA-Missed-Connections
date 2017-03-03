@@ -3,7 +3,7 @@
 <ul>
   <% @posts.each do |post| %>
   <li>
-    <%= post.title %> <%= post.body %> <%= post.location.campus %>
+    <strong><%= post.title %></strong> <%= post.location.campus %>
     <%= link_to "More info", post_path(post) %>
   </li>
   <% end %>
