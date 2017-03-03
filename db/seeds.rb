@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-if Location.count>0
+if Location.count==0
   Location.create([
     {campus: 'Atlanta'},
     {campus: 'Austin'},
