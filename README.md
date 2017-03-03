@@ -12,8 +12,23 @@ By the end of Project 2, I will have created a "missed connections" website for 
 ###Approach
 I will use the technologies listed above to render a CRUD app in the browser. 
 
+###Installation Instructions
+* Clone the repo
+* Navigate to directory in terminal
+* run bundle install
+* run rails db:create
+* run rails db:migrate
+* run rails s
+* navigate to localhost:3000 and use the app
+
+
 ###Trello Board
-<a href="https://trello.com/b/3YUf6ckR/wdi-sm-43-project-2" target = "_blank">GA Missed Connections Trello</a>
+<a href="https://trello.com/b/3YUf6ckR/wdi-sm-43-project-2" target = "_blank">GA Missed Connections Trello</a>'
+
+###Unresolved Issues
+* No way to edit comments yet
+* Cannot filter posts by location
+* No admin user to remove bad content
 
 ###Entity Relationship Diagram (ERD):
 ![erd](assets/ERD.jpg)
